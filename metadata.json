@@ -1,0 +1,6 @@
+{
+  "name": "SAHARA — Work, Earnings & Safety",
+  "description": "Mobile-first Android PWA empowering women in informal and home-based work with verified local jobs, voice income tracking, safe travel check-ins, support directories, and a consent-led Independence Passport.",
+  "requestFramePermissions": ["microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

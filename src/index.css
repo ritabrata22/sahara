@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --sahara-canvas: #FCF9F2;
+    --sahara-surface: #FFFFFF;
+    --sahara-surface-warm: #F7F3EA;
+    --sahara-mint-soft: #EBF3F1;
+    --sahara-mint: #C8F3DC;
+    --sahara-blush: #FCEBE6;
+    --sahara-teal: #064E46;
+    --sahara-teal-hover: #043B35;
+    --sahara-coral: #C8553D;
+    --sahara-ink: #0F2421;
+    --sahara-muted: #526763;
+    --sahara-border: #E5E0D5;
+  }
+
+  html {
+    font-family: 'DM Sans', 'Noto Sans Devanagari', 'Noto Sans Gujarati', system-ui, sans-serif;
+    background-color: var(--sahara-canvas);
+    color: var(--sahara-ink);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', 'Noto Sans Gujarati', system-ui, sans-serif;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
